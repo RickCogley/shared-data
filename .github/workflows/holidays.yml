@@ -1,5 +1,8 @@
 name: Fetch Holidays
 on:
+  push:
+    branches: [main]
+  workflow_dispatch:
   schedule:
     - cron: 10 15 * * 0-6
 permissions:
