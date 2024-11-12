@@ -10,6 +10,8 @@ permissions:
 jobs:
   refresh-feed:
     runs-on: ubuntu-latest
+    environment:
+      name: 'Fetch'
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
